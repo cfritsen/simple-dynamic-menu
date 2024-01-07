@@ -1,4 +1,15 @@
-/* Prevent default function to allow special use */
-/* .navbar {
-    display: none;
-} */
+.italic {
+    font-style: italic;
+}
+p {
+    font-size: 20px;
+    line-height: 1.2em;
+}
+.navmove-container {
+    max-width: 100%;
+}
+.navmove-section {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 100px;
+}
