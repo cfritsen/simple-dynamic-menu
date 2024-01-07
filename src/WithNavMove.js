@@ -19,10 +19,15 @@ export default function WithNavMove(props) {
 
     useEffect(() => {
         const menu = document.getElementsByClassName('navbar-home')[0]
+        const originalMenu = document.getElementsByClassName('navbar')[0]
+        originalMenu.style = 'display: none'
         const menuObs = new IntersectionObserver(observerHandler, observerOptions)
         menuObs.observe(menu)
 
-        return () => menuObs.unobserve(menu)
+        return () => {
+            menuObs.unobserve(menu)
+            originalMenu.style = ''
+        }
         
     },[]) 
 
