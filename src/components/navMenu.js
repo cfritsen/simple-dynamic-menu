@@ -7,22 +7,24 @@ export default function NavMenu(props) {
 
     //Builds links for TopMenu
     const linkBuilder = link => {
-        if (!SubMenu[link]){
-            return <Link to={links[link]} key={link}>{link}</Link>
+        const linkTrim = link.replace(/\s+/g, '');
+        console.log(linkTrim)
+        if (!SubMenu[linkTrim]){
+            return <Link to={links[linkTrim]} key={link}>{link}</Link>
         } else {
-            return subMenuBuilder(link);
+            return subMenuBuilder(link, linkTrim);
         }
     }
     //Builds SubMenus
-    const subMenuBuilder = link => {
-        const subMenu = SubMenu[link];
+    const subMenuBuilder = (link, linkTrim) => {
+        const subMenu = SubMenu[linkTrim];
         return (
             <div class='submenu'>
-                <Link to={links[link]}>{link}</Link>
+                <Link to={links[linkTrim]}>{link}</Link>
                 <div class='submenu-content'>
                     {subMenu.map(link => {
                         return (
-                            <Link to={links[link]} key={link}>{link}</Link>
+                            <Link to={links[linkTrim]} key={link}>{link}</Link>
                         )
                     })}
                 </div>

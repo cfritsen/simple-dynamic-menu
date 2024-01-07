@@ -13,10 +13,10 @@
         "StaticTest4" : "/no-nav-move",
         "StaticTest5" : "/no-nav-move"
     },
-    "TopMenu" : ["Home", "WithNavMove", "NoNavMove"],
+    "TopMenu" : ["Home", "With Nav Move", "No Nav Move"],
     "SubMenu" : {
-        "WithNavMove": ["TestPage1", "TestPage2", "TestPage3", "TestPage4"],
-        "NoNavMove" : ["StaticTest1", "StaticTest2", "StaticTest3", "StaticTest4", "StaticTest5"]
+        "WithNavMove": ["Test Page 1", "Test Page 2", "Test Page 3", "Test Page 4"],
+        "NoNavMove" : ["Static Test 1", "Static Test 2", "Static Test 3", "Static Test 4", "Static Test 5"]
     },
     "FooterMenu" : ["Home", "WithNavMove", "NoNavMove"]
 }
