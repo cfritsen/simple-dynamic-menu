@@ -1,0 +1,18 @@
+header {
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 2px solid blue;
+}
+section {
+    padding-top: 50px;
+}
+p {
+    text-indent: 2em;
+}
+.text-center {
+    text-align: center;
+    font-weight: bold;
+}
+.text-center p {
+    text-indent: 0;
+}

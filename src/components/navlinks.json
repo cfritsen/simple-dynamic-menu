@@ -1,0 +1,22 @@
+{
+    "links": {
+        "Home" : "/",
+        "WithNavMove" : "/with-nav-move",
+        "TestPage1" : "/with-nav-move",
+        "TestPage2" : "/with-nav-move",
+        "TestPage3" : "/with-nav-move",
+        "TestPage4" : "/with-nav-move",
+        "NoNavMove" : "/no-nav-move",
+        "StaticTest1" : "/no-nav-move",
+        "StaticTest2" : "/no-nav-move",
+        "StaticTest3" : "/no-nav-move",
+        "StaticTest4" : "/no-nav-move",
+        "StaticTest5" : "/no-nav-move"
+    },
+    "TopMenu" : ["Home", "WithNavMove", "NoNavMove"],
+    "SubMenu" : {
+        "WithNavMove": ["TestPage1", "TestPage2", "TestPage3", "TestPage4"],
+        "NoNavMove" : ["StaticTest1", "StaticTest2", "StaticTest3", "StaticTest4", "StaticTest5"]
+    },
+    "FooterMenu" : ["Home", "WithNavMove", "NoNavMove"]
+}
